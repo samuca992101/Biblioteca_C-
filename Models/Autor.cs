@@ -2,8 +2,9 @@
 {
     public class Autor
     {
-        public string Id { get; set; }
-        public string Nome { get; set; }
-        public string Nacionalidade { get; set; }
+        public int Id { get; set; }
+        public string? Nome { get; set; }
+        public string? Nacionalidade { get; set; }
+        public ICollection<LivroAutor>? LivrosAutores { get; set; }
     }
 }
