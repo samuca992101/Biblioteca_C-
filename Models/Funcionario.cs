@@ -1,9 +1,12 @@
-﻿namespace BibliotecaC_.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace BibliotecaC_.Models
 {
     public class Funcionario
     {
         public int Id { get; set; }
         public string? Nome { get; set; }
+        [Display(Name = "Matrícula")]
         public string? Matricula { get; set; }
         public CargoEnum Cargo { get; set; }
         public enum CargoEnum
